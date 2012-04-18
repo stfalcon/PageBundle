@@ -12,7 +12,8 @@ class LoadPagesData extends AbstractFixture
     {
         $page = new Page();
         $page->setSlug('testPage');
-        $page->setText('This is test page text');
+        $text = '<table style="width:100%"><tr><th>Test content table</th></tr><tr><td><a href="http://google.com">go to google</a></td></tr><tr><td>This is test page text</td></tr></table>';
+        $page->setText($text);
         $page->setTitle('This is test page title');
         $manager->persist($page);
         $manager->flush();
