@@ -11,7 +11,7 @@ use Knp\Bundle\MenuBundle\MenuItem;
 
 use Stfalcon\Bundle\PageBundle\Entity\Page;
 
-class PageAdmin extends Admin 
+class PageAdmin extends Admin
 {
     protected function configureListFields(ListMapper $listMapper)
     {
@@ -19,10 +19,10 @@ class PageAdmin extends Admin
             ->addIdentifier('slug')
             ->add('title')
         ;
-        
+
         return $listMapper;
     }
-    
+
     protected function configureFormFields(FormMapper $formMapper)
     {
         $formMapper
@@ -32,7 +32,7 @@ class PageAdmin extends Admin
                 ->add('text')
             ->end()
         ;
-        
+
         return $formMapper;
     }
 }
