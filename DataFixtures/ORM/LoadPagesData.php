@@ -6,7 +6,7 @@ use Doctrine\Common\DataFixtures\AbstractFixture;
 use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
 use Stfalcon\Bundle\PageBundle\Entity\Page;
 
-class LoadPagesData extends AbstractFixture implements OrderedFixtureInterface
+class LoadPagesData extends AbstractFixture
 {
     public function load($manager)
     {
@@ -16,10 +16,5 @@ class LoadPagesData extends AbstractFixture implements OrderedFixtureInterface
         $page->setTitle('This is test page title');
         $manager->persist($page);
         $manager->flush();
-    }
-
-    public function getOrder()
-    {
-        return 4; // the order in which fixtures will be loaded
     }
 }
