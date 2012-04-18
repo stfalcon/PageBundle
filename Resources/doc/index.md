@@ -14,7 +14,7 @@ This version of the bundle requires:
 
 ## Installation
 
-Installation is a quick (I promise!) 8 step process:
+Installation is a quick 4 step process:
 
 1. Add PageBundle in your composer.json
 2. Enable the Bundle
