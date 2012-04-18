@@ -10,7 +10,7 @@ use Liip\FunctionalTestBundle\Test\WebTestCase;
 class PageControllerTest  extends WebTestCase
 {
 
-    public function testBrowseByUsers()
+    public function testBrowsePage()
     {
         $this->loadFixtures(array('Stfalcon\Bundle\PageBundle\DataFixtures\ORM\LoadPagesData'));
 
