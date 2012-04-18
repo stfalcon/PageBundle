@@ -6,6 +6,7 @@ Simple small bundle for simple site pages
 ## Prerequisites
 
 This version of the bundle requires:
+
 1. Symfony >= 2.0
 2. LiipFunctionalTestBundle for testing
 3. DoctrineFixturesBundle for fixtures
