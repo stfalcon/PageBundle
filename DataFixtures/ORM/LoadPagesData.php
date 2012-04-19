@@ -3,12 +3,12 @@
 namespace Stfalcon\Bundle\PageBundle\DataFixtures\ORM;
 
 use Doctrine\Common\DataFixtures\AbstractFixture;
-use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
 use Stfalcon\Bundle\PageBundle\Entity\Page;
+use Doctrine\Common\Persistence\ObjectManager;
 
 class LoadPagesData extends AbstractFixture
 {
-    public function load($manager)
+    public function load(ObjectManager $manager)
     {
         $page = new Page();
         $page->setSlug('testPage');
