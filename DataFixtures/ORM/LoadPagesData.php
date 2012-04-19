@@ -8,7 +8,7 @@ use Stfalcon\Bundle\PageBundle\Entity\Page;
 
 class LoadPagesData extends AbstractFixture
 {
-    public function load($manager)
+    public function load(ObjectManager $manager)
     {
         $page = new Page();
         $page->setSlug('testPage');
