@@ -74,4 +74,31 @@ Run the following command.
 $ php app/console doctrine:schema:update --force
 ```
 
+### Step 5: Create layout template for the PageBundle
+
+Create a main layout `layout.html.twig` in the `app/Resources/views/` directory with the following contents:
+
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+        <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" />
+
+        {# Metadata from the StfalconPageBundle #}
+        {% set _meta_keywords = block('meta_keywords') %}
+        {% set _meta_description = block('meta_description') %}
+        {% if _meta_keywords is not empty %}<meta name="keyword" content="{{ _meta_keywords }}">{% endif %}
+        {% if _meta_description is not empty %}<meta name="description" content="{{ _meta_description }}">{% endif %}
+
+    </head>
+    <body>
+        {% block content %}{% endblock %}
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>
+```
+
 Now that you have completed the installation and configuration of the PageBundle!

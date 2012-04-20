@@ -46,4 +46,27 @@ class PageEntityTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals($title, $page->getTitle());
 
     }
+
+    public function testSetAndGetMetaKeywords()
+    {
+        $page = new Page();
+
+        $metaKeywords = 'Stfalcon, pagebundle';
+        $page->setMetaKeywords($metaKeywords);
+
+        $this->assertEquals($metaKeywords, $page->getMetaKeywords());
+
+    }
+
+    public function testSetAndGetMetaDescription()
+    {
+        $page = new Page();
+
+        $metaDescription = 'Simple Page bundle by Stfalcon web-studio';
+        $page->setMetaDescription($metaDescription);
+
+        $this->assertEquals($metaDescription, $page->getMetaDescription());
+
+    }
+
 }
