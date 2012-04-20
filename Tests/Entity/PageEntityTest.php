@@ -5,17 +5,23 @@ namespace Stfalcon\Bundle\PageBundle\Tests\Entity;
 use Stfalcon\Bundle\PageBundle\Entity\Page;
 
 /**
- * test Page entity
+ * Test Page entity
  */
 class PageEntityTest extends \PHPUnit_Framework_TestCase
 {
 
+    /**
+     * Check if the Page ID is null
+     */
     public function testEmptyPageIdisNull()
     {
         $page = new Page();
         $this->assertNull($page->getId());
     }
 
+    /**
+     * Check the getter and the setter of the `text` property
+     */
     public function testSetAndGetPageText()
     {
         $text = "Design can help you improve your sustainability credentials, create products and services that make people happy and it has positive benefits on business's bottom line.";
@@ -26,6 +32,9 @@ class PageEntityTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals($text, $page->getText());
     }
 
+    /**
+     * Check the getter and the setter of the `slug` property
+     */
     public function testSetAndGetPageSlug()
     {
         $page = new Page();
@@ -36,6 +45,9 @@ class PageEntityTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals($slug, $page->getSlug());
     }
 
+    /**
+     * Check the getter and the setter of the `title` property
+     */
     public function testGetAndAddPageTitle()
     {
         $page = new Page();
@@ -47,6 +59,9 @@ class PageEntityTest extends \PHPUnit_Framework_TestCase
 
     }
 
+    /**
+     * Check the getter and the setter of the `metaKeywords` property
+     */
     public function testSetAndGetMetaKeywords()
     {
         $page = new Page();
@@ -58,6 +73,9 @@ class PageEntityTest extends \PHPUnit_Framework_TestCase
 
     }
 
+    /**
+     * Check the getter and the setter of the `metaDescription` property
+     */
     public function testSetAndGetMetaDescription()
     {
         $page = new Page();

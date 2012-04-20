@@ -10,6 +10,9 @@ use Liip\FunctionalTestBundle\Test\WebTestCase;
 class PageControllerTest extends WebTestCase
 {
 
+    /**
+     * Test of the page view controller
+     */
     public function testBrowsePage()
     {
         $this->loadFixtures(array('Stfalcon\Bundle\PageBundle\DataFixtures\ORM\LoadPagesData'));
