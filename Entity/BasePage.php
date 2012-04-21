@@ -41,6 +41,20 @@ abstract class BasePage
      */
     private $text;
 
+    /**
+     * @var string $metaKeywords
+     *
+     * @ORM\Column(name="meta_keywords", type="string", length=255, nullable=true)
+     */
+    private $metaKeywords;
+
+    /**
+     * @var string $metaDescription
+     *
+     * @ORM\Column(name="meta_description", type="string", length=255, nullable=true)
+     */
+    private $metaDescription;
+
 
     /**
      * Get id
@@ -110,5 +124,45 @@ abstract class BasePage
     public function getText()
     {
         return $this->text;
+    }
+
+    /**
+     * @param string $metaKeywords
+     */
+    public function setMetaKeywords($metaKeywords)
+    {
+        $this->metaKeywords = $metaKeywords;
+    }
+
+    /**
+     * @return string
+     */
+    public function getMetaKeywords()
+    {
+        return $this->metaKeywords;
+    }
+
+    /**
+     * @param string $metaDescription
+     */
+    public function setMetaDescription($metaDescription)
+    {
+        $this->metaDescription = $metaDescription;
+    }
+
+    /**
+     * @return string
+     */
+    public function getMetaDescription()
+    {
+        return $this->metaDescription;
+    }
+
+    /**
+     * @return string
+     */
+    public function __toString()
+    {
+        return $this->getTitle() ? : '-';
     }
 }

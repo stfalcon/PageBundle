@@ -15,7 +15,10 @@ use Symfony\Component\DependencyInjection\Loader;
 class StfalconPageExtension extends Extension
 {
     /**
-     * {@inheritDoc}
+     * Loads a specific configuration.
+     *
+     * @param array            $configs   An array of configuration values
+     * @param ContainerBuilder $container A ContainerBuilder instance
      */
     public function load(array $configs, ContainerBuilder $container)
     {
