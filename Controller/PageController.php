@@ -11,8 +11,6 @@ use Stfalcon\Bundle\PageBundle\Entity\Page;
 
 /**
  * Page controller
- *
- * @Route("/page")
  */
 class PageController extends Controller
 {

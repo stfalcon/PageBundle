@@ -60,7 +60,7 @@ In YAML:
 StfalconPageBundle:
     resource: "@StfalconPageBundle/Controller/"
     type:     annotation
-    prefix:   /
+    prefix:   /page
 ```
 
 ### Step 4: Update your database schema
