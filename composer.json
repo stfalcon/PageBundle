@@ -1,5 +1,5 @@
 {
-    "name": "mutuh/page-bundle",
+    "name": "stfalcon/page-bundle",
     "description": "Simple page module.",
     "keywords": ["page"],
     "type": "symfony-bundle",
@@ -17,8 +17,7 @@
         "symfony/symfony": ">=2.1",
         "stof/doctrine-extensions-bundle": "dev-master",
         "sonata-project/admin-bundle": "dev-master",
-        "sonata-project/doctrine-orm-admin-bundle": "dev-master",
-        "sonata-project/cache-bundle": "dev-master"
+        "sonata-project/doctrine-orm-admin-bundle": "dev-master"
     },
     "suggest": {
         "liip/functional-test-bundle": "functional testing bundle",
