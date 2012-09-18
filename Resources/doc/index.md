@@ -7,7 +7,7 @@ Simple small bundle for simple site pages
 
 This version of the bundle requires:
 
-1. Symfony >= 2.0
+1. Symfony >= 2.1
 2. LiipFunctionalTestBundle for testing
 3. DoctrineFixturesBundle for fixtures
 4. SonataAdminBundle for administering
@@ -62,6 +62,7 @@ StfalconPageBundle:
     type:     annotation
     prefix:   /page
 ```
+[Routing in SonataAdminBundle](https://github.com/sonata-project/SonataAdminBundle/blob/master/Resources/doc/reference/getting_started.rst#step-1-define-sonataadminbundle-routes)
 
 ### Step 4: Update your database schema
 
