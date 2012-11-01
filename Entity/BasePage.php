@@ -35,7 +35,7 @@ abstract class BasePage
     private $title;
 
     /**
-     * @var text $text
+     * @var string $text
      *
      * @ORM\Column(type="text")
      */
@@ -109,7 +109,7 @@ abstract class BasePage
     /**
      * Set text
      *
-     * @param text $text
+     * @param string $text
      */
     public function setText($text)
     {
@@ -119,7 +119,7 @@ abstract class BasePage
     /**
      * Get text
      *
-     * @return text
+     * @return string
      */
     public function getText()
     {
