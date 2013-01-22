@@ -29,9 +29,7 @@ class LoadPagesData extends AbstractFixture
 
         $page = new Page();
         $page->setSlug('contacts');
-        $text = '<h2>Контактная информация</h2>
-
-                <!-- Orgs contacts page content -->
+        $text = '<!-- Orgs contacts page content -->
                 <div class="contacts-page">
 
                     <div class="contacts-page-email">
