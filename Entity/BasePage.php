@@ -18,42 +18,42 @@ abstract class BasePage
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
      */
-    private $id;
+    protected $id;
 
     /**
      * @var string $slug
      *
      * @ORM\Column()
      */
-    private $slug;
+    protected $slug;
 
     /**
      * @var string $title
      *
      * @ORM\Column()
      */
-    private $title;
+    protected $title;
 
     /**
      * @var string $text
      *
      * @ORM\Column(type="text")
      */
-    private $text;
+    protected $text;
 
     /**
      * @var string $metaKeywords
      *
      * @ORM\Column(name="meta_keywords", type="string", length=255, nullable=true)
      */
-    private $metaKeywords;
+    protected $metaKeywords;
 
     /**
      * @var string $metaDescription
      *
      * @ORM\Column(name="meta_description", type="string", length=255, nullable=true)
      */
-    private $metaDescription;
+    protected $metaDescription;
 
 
     /**
